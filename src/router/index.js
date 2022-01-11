@@ -4,8 +4,11 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter)
 
 const Login = () => import('../views/login.vue')
-const Home = () => import('../views/home.vue')
-
+const Home = () => import('../views/Home/home.vue')
+const Service = () => import('../views/Home/service.vue')
+const Product = () => import('../views/Home/Product/product.vue')
+const ProductList = () => import('../views/Home/Product/productList')
+const ProductEdit = () =>import('../views/Home/Product/productEdit')
 
 const router = new VueRouter({
     mode: 'history',
