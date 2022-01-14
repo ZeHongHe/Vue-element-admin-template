@@ -1,7 +1,7 @@
 # Vue-element-admin-template
-Vue-element-admin-template 是一个后台前端模板，基于此模板可以快速实现需要的功能
-更多功能待开发......
-技术栈：Vue + Vue router + Vue cli + elementUI 
+Vue-element-admin-template 是一个后台前端模板，基于此模板可以快速实现需要的功能<br>
+更多功能待开发......<br>
+技术栈：Vue + Vue router + Vue cli + elementUI <br>
 
 ``` bash
 # 克隆项目
