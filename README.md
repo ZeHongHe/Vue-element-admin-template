@@ -1,7 +1,7 @@
 # Vue-element-admin-template
-Vue-element-admin-template 是一个后台前端模板，基于此模板可以快速实现需要的功能<br>
-更多功能待开发......<br>
-技术栈：Vue + Vue router + Vue cli + elementUI <br>
+Vue-element-admin-template 是一个后台前端模板，基于此模板可以快速实现需要的功能<br><br>
+更多功能待开发......<br><br>
+技术栈：Vue + Vue router + Vue cli + elementUI <br><br>
 
 ``` bash
 # 克隆项目
@@ -19,7 +19,6 @@ npm run serve
 # 打包以发送至生产环境
 npm run build
 
-# build for production and view the bundle analyzer report
 # bundle 分析
 npm run build --report
 ```
