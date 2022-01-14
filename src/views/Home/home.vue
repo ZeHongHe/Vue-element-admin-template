@@ -10,7 +10,7 @@
                     <i :class="isMenuCollapse ? 'el-icon-s-unfold' : 'el-icon-s-fold'" />
                 </el-button>
                 <el-dropdown>
-                    <i class="el-icon-setting" style="margin-right: 15px"><span>欢迎回来，{{adminName}}</span></i>
+                    <i class="el-icon-setting" style="margin-right: 15px"><span>欢迎回来，{{username}}</span></i>
                     <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item>退出</el-dropdown-item>
                 </el-dropdown-menu>
@@ -25,16 +25,28 @@
 </template>
 
 <script>
+import {getGlobalData, clearGlobalData} from 'utils/globalData';
 import Menu from "components/menu.vue"
 
 export default {
-    name: "app",
-    data() {
-        return { }
-    },
-    methods: {
-
+    name: 'app',
+    data:() =>{
+    return {
+      isMenuCollapse: false, // 是否收起左侧菜单
+      username: getGlobalData('username') || '' // 用户名，从 globalData 里取出
     }
+  },
+  components: {
+    Menu
+  },
+  methods: {
+    // 退出登录
+    logout(){
+      // 清空用户信息，然后退出到 login 登录界面
+      clearGlobalData('username');
+      this.$router.push({name: 'Login'});
+    }
+  },
 }
 </script>
 
